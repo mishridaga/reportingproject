@@ -1,0 +1,323 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+/* ---------------------------------------------------
+COLOR GUIDE
+----------------------------------------------------*/
+
+:root {
+    --report-blue: #2C537D;
+    --midnight-blue: #19325B;
+    --dark-grey: #444444;
+    --medium-grey-1: #878787;
+    --medium-grey-2: #BBBBBB;
+    --light-grey-1: #DFDFDF;
+    --light-grey-2: #F0F0F0;
+    --aqua-main: #38A1A2;
+    --aqua-secondary: #1E6864;
+    --gold-main: #FBAC18;
+    --gold-secondary: #F58646;
+    --red-main: #DC4227;
+    --red-secondary: #8F221D;
+
+}
+
+/* ---------------------------------------------------
+GLOBAL STYLES
+----------------------------------------------------*/
+
+.page {
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 11.5px;
+    font-family: "Lato", sans-serif;
+    color: var(--dark-grey);
+
+}
+
+.container {
+    width: 745px; 
+    margin-bottom: 100px;
+}
+
+.inner-content {
+    padding: 0px 30px;
+    margin: 0px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 900px;
+    line-height: .5;
+    color:  var(--dark-grey);
+    margin: 30px 0px 10px;
+    clear: both
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 30px 0px 15px; 
+    margin: 0px;
+    clear: both;
+}
+
+.footnote{
+    background-color: var(--light-grey-2);
+    padding: 15px 20px;
+    margin: 20px 0px 0px;
+}
+
+hr {
+    border-top: 1px var( --light-grey-2) solid;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.chart {
+    padding: 20px 0px 0px 0px;
+    margin: 0px 0px -10px;
+    height: 190px;
+}
+
+.chart-legend {
+    padding: 20px 0px 0px 0px;
+    margin: 0px 0px -10px;
+    height: 220px;
+}
+
+
+/* ---------------------------------------------------
+FILTERS STYLES
+----------------------------------------------------*/
+
+.filters {
+    width: 100%;
+    background: var(--light-grey-2);
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.filters h4 {
+    margin: 0px;
+    padding: 10px;
+    margin-left: 33px;
+    margin-top: 1px;
+}
+
+.filters p {
+    background-color: white;
+    border: 1px var(--dark-grey) solid;
+    border-radius: 25px;
+    float: left;
+    padding: 1px 10px;
+    margin: 2px 10px 10px;
+
+}
+
+.filters img {
+    height: 25px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+/* ---------------------------------------------------
+HEADER STYLES
+----------------------------------------------------*/
+
+header {
+    background-color: var(--report-blue);
+    color: white;
+    padding: 20px 30px;
+    width: 70%;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    height: 94px;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 22pt;
+    text-transform: uppercase;   
+}
+
+header h3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: .5;
+}
+
+.header-rectangle {
+    background-color: var(--midnight-blue);
+    width: 745px;
+    height: 134px;
+    position: absolute;
+    z-index: -1;
+    top: 8px;
+    left: 8px;
+}
+
+/* ---------------------------------------------------
+TABLE STYLE
+----------------------------------------------------*/
+
+table {
+    text-align: left;
+    border-spacing: 0px;
+    width: 685px;
+    padding: 0px 0px;
+}
+
+th {
+    background-color: var(--report-blue);
+    color: white;  
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 5px 5px;
+}
+
+
+th, td {
+    border-left: 1px white solid; 
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-grey-2);
+}
+
+.total-table tr:last-child td {
+    background-color: var(--medium-grey-2);
+    color: white;
+    font-weight: 700;
+    height: 25px;
+}
+
+.title-table tr th:first-child, tbody tr td:first-child {
+    width: 34%;
+}
+
+.border-top td {
+    border-top: 1px var(--medium-grey-2) solid;
+}
+
+.no-border {
+    border-left: 0;
+}
+
+.sub-catg td:first-child {
+    padding-left: 30px;
+}
+
+.fixed {
+    table-layout: fixed;
+    width: 685px;
+}
+
+.left-center td:not(:first-child), .left-center th:not(:first-child) {
+    text-align: center
+    
+}
+
+
+
+
+/* ---------------------------------------------------
+GROUP SERVICES STYLES
+----------------------------------------------------*/
+.group-services th {
+    background-color: var(--aqua-main);
+}
+
+
+/* ---------------------------------------------------
+INDIVIDUAL SERVICES STYLES
+----------------------------------------------------*/
+.individual-services th {
+    background-color: var(--gold-main);
+}
+
+
+/* ---------------------------------------------------
+CASE MANAGEMENT STYLE
+----------------------------------------------------*/
+.case-management th {
+    background-color: var(--red-main);
+}
+
+
+/* ---------------------------------------------------
+HIGH LEVEL METRIC STYLES
+----------------------------------------------------*/
+.overview th, .overview table {
+    background-color: var(--light-grey-2);
+}
+
+.overview table {
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px 20px;
+
+}
+
+.overview th {
+    font-size: 13px;
+    color: var(--dark-grey);
+    text-transform: none;   
+}
+
+.overview th:first-child , .overview td:first-child{
+    border-left: 0; 
+}
+
+.circle-metric {
+    border-radius: 50%;
+    background-color: var(--report-blue);
+    width: 88px;
+    height: 88px;
+    display: inline-block;
+    position: relative;
+    text-align: center; 
+}
+
+.circle-metric p {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin-top: 1px;
+}
+
+.circle-metric img {
+    height: 30px;
+    color: white;
+    margin: 6px 0px 0px;
+}
+
+.circle-metric hr {
+    border-top: .5px solid white;
+    width: 60%;
+    margin: auto;
+}
+
+
+
+/* ---------------------------------------------------
+PRINT STYLES
+----------------------------------------------------*/
+@media print {
+    .page { 
+        page-break-after: always; 
+    } /* page-break-after works, as well */
+}
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>attendance by participant</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/overview.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://rawgit.com/highcharts/rounded-corners/master/rounded-corners.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class = "header-rectangle"></div>
+                <h1>Attendance by Participant</h1>
+                <h3>Sample Agency &ndash; Sample Site</h3>
+                <h3>Program Dates: 09/05/2018 - 06/15/2019</h3>
+            </header>
+            <div class = inner-content>
+                <div class = "filters">
+                    <img src = "icons/filter.svg">
+                    <h4>Filters applied</h4>
+                    <p>RESULT FORMAT: <span class = "bold"> Break Down by Service </span> </p>
+                    <p>AGGREGATE BY: <span class = "bold"> Day </span> </p>
+
+                </div>
+                <div class = "program-overview">
+                    <h2>Overview</h2>
+                    <hr>
+                    <div class = "overview">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days Attended</th>
+                                    <th>Days Scheduled</th>
+                                    <th>% Days Attended</th>
+                                    <th>Participant Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/smile.svg">
+                                            <hr>
+                                            <p>112</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/smile.svg">
+                                            <hr>
+                                            <p>4</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/smile.svg">
+                                            <hr>
+                                            <p>.4%</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/smile.svg">
+                                            <hr>
+                                            <p>12</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class = "table total-table">
+                        <table id = "attendance-by-date" >
+                            <thead>
+                                <tr>
+                                    <th style = "width: 200px">Participant Name</th>
+                                    <th style = "width: 200px">Service Name</th>
+                                    <th>Days Attended</th>
+                                    <th>Days Scheduled</th>
+                                    <th>% Days Attended</th>
+                                    <th>Particpant Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aguilar, Jazlyn</td>
+                                    <td>Sample Service One</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Sample Service Two</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "bold">
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "border-top">
+                                    <td>John Smith</td>
+                                    <td>Sample Service One</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "bold">
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "border-top">
+                                    <td>Carolyn Lea</td>
+                                    <td>Sample Service One</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "bold">
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "border-top">
+                                    <td>Laura Dern</td>
+                                    <td>Sample Service One</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "bold">
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr class = "bold">
+                                    <td colspan="2">Total</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>attendance by date</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/overview.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://rawgit.com/highcharts/rounded-corners/master/rounded-corners.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class = "header-rectangle"></div>
+                <h1>Attendance by Date</h1>
+                <h3>Sample Agency &ndash; Sample Site</h3>
+                <h3>Program Dates: 09/05/2018 - 06/15/2019</h3>
+            </header>
+            <div class = inner-content>
+                <div class = "program-overview">
+                    <h2>Overview</h2>
+                    <hr>
+                    <div class = "overview">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Enrolled</th>
+                                    <th>Dates with Attendance</th>
+                                    <th>Total Present</th>
+                                    <th>Average Daily Attendance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/smile.svg">
+                                            <hr>
+                                            <p>112</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/dayswithattendance.svg">
+                                            <hr>
+                                            <p>4</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/smile.svg">
+                                            <hr>
+                                            <p>54</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "circle-metric">
+                                            <img src = "icons/avgdailyattendance.svg">
+                                            <hr>
+                                            <p>12</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <br>
+                    <div class = "table title-table total-table left-center">
+                        <table id = "attendance-by-date">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Enrolled</th>
+                                    <th>Present</th>
+                                    <th>Absent</th>
+                                    <th>Unknown</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday, September 3, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday, September 4, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday, September 5, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday, September 6, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday, September 7, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Monday, September 3, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday, September 4, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday, September 5, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday, September 6, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday, September 7, 2018</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>2</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>17</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>240</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class = "footnote">
+                        <p><span class = "bold">Present-</span> Number of distinct participants with at least one "present" attendance record on this date. </p>
+                        <p><span class = "bold">Absent-</span> Number of distinct participants with at least one "absent" attendance record on this date. </p> 
+                        <p><span class = "bold">Unknown-</span> Number of distinct participants that were scheduled to attend a service on this date, but were neither marked present nor marked absent. </p>
+                        <p><span class = "bold">Enrolled-</span> Number of distinct participants that were schedule to attend a service on this date. </p>
+                        <p><span class = "bold">Note: "Present" + "Absent" + "Unknown" do not always sum up to "Enrolled," since a participant may be enrolled in more than one service each day. If he/she was present at one session and absent at the other, this would count once in the "Present" column, once in the "Absent" column, and only once in the "Enrolled" column.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src = "js/app.js"></script>
+<script src = "js/sparkline.js"></script>

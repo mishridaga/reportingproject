@@ -1,0 +1,469 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+/* ---------------------------------------------------
+COLOR GUIDE
+----------------------------------------------------*/
+:root {
+    --report-blue: #2C537D;
+    --midnight-blue: #19325B;
+    --dark-grey: #444444;
+    --medium-grey-1: #878787;
+    --medium-grey-2: #BBBBBB;
+    --light-grey-1: #DFDFDF;
+    --light-grey-2: #F0F0F0;
+    --aqua-main: #38A1A2;
+    --aqua-secondary: #1E6864;
+    --gold-main: #FBAC18;
+    --gold-secondary: #F58646;
+    --red-main: #DC4227;
+    --red-secondary: #8F221D;
+    
+    
+    --green-main: #64B946;
+    --cerulean-main:  #0495CB;
+    --purple-main: #803D7B;
+    --green-3: #427939;
+    --cerulean-3:  #025281;
+    --purple-3: #5B1F5B;
+    
+    --green-1: #C5DA42;
+    
+    --berry-main: #B41343 ;
+    --berry-3: #931037;   
+}
+
+
+/* ---------------------------------------------------
+GLOBAL STYLES
+----------------------------------------------------*/
+h2 {
+    color: white;
+}
+
+.program-overview, .group-services, .individual-services, .case-management {
+    clear: both;
+    display: inline-block;
+}
+
+
+/* ---------------------------------------------------
+SECTION HEADER STYLES
+----------------------------------------------------*/
+.section-header {
+    margin-top: 30px;
+}
+
+.section-header .rectangle {
+    height: 42px;
+    width: 745px;
+    position: absolute
+}
+
+.section-header .rounded-rectangle {
+    height: 42px;
+    width: 300px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+}
+
+.section-header h2 {
+    padding: 15px 55px;
+    margin: 0;
+    position: relative; 
+    padding-top: 17px;
+}
+
+.section-header img {
+    height: 25px;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 20px
+}
+
+/* ---------------------------------------------------
+AGE TABLE STYLE
+----------------------------------------------------*/
+.age-table thead tr th:first-child, tbody tr td:first-child
+{
+    width: 60px;
+}
+
+.age-table thead tr th:last, tbody tr td:last {
+    width: 60px;
+}
+
+.age-table th {
+    text-align: center;
+}
+
+.age-table th:nth-child(2) {
+    text-align: left;
+}
+
+.age-table td {
+    text-align: center;
+}
+
+.age-table tr:last-child td:nth-child(2) {
+    text-align: left;
+}
+
+.pie td {
+    background-color: var(--light-grey-2);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--medium-grey);
+    vertical-align: bottom;
+    padding: 0px;
+}
+
+.pie td:first-child {
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+.pie {
+    margin: 20px 0px 0px;
+    padding: 0px;
+    
+}
+
+.pie table {
+    margin: 0px;
+    padding: 0px;
+}
+
+.table-pie {
+    width: 685px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.table-pie table {
+    width: 100%;
+}
+
+.table-pie td:nth-child(2) {
+    width: 10px;
+}
+
+
+
+/* ---------------------------------------------------
+PROGRAM OVERVIEW STYLES
+----------------------------------------------------*/
+.program-overview .overview {
+    background-color: transparent;
+}
+
+.program-overview h2 {
+    color: var(--midnight-blue)
+}
+
+.program-overview .highcharts-legend {
+    visibility: visible
+}
+
+.program-overview .overview th, .program-overview .overview table {
+    background-color: white;
+    padding-top: 5px;
+}
+
+
+.program-overview .overview td, .program-overview .overview th {
+    border-left: 1px var(--light-grey-2) solid;
+}
+
+.program-overview .overview td:first-child, .program-overview .overview th:first-child {
+    border-left: 0;
+}
+
+/* ---------------------------------------------------
+GROUP SERVICES STYLES
+----------------------------------------------------*/
+.group-services .highcharts-color-0 {
+    fill: var(--aqua-main);
+    stroke: var(--aqua-main);
+}
+
+.group-services .section-header .rectangle {
+    background-color: var(--aqua-secondary);
+}
+
+.group-services .section-header .rounded-rectangle {
+    background-color: var(--aqua-main);
+}
+
+.group-services .circle-metric {
+    background-color: var(--aqua-main);
+}
+
+
+/* ---------------------------------------------------
+INDIVIDUAL SERVICES STYLES
+----------------------------------------------------*/
+.individual-services .highcharts-color-0 {
+    fill: var(--gold-main);
+    stroke: var(--gold-main);
+}
+
+.individual-services .section-header .rectangle {
+    background-color: var(--gold-secondary)
+}
+
+.individual-services .section-header .rounded-rectangle {
+    background-color:var(--gold-main);
+}
+
+.individual-services .circle-metric {
+    background-color: var(--gold-main);
+}
+
+/* ---------------------------------------------------
+CASE MANAGEMENT STYLE
+----------------------------------------------------*/
+
+.case-management .highcharts-color-0 {
+    fill: var(--red-main);
+    stroke: var(--red-main);
+}
+
+.case-management .section-header .rectangle {
+    background-color: var(--red-secondary);
+}
+
+.case-management .section-header .rounded-rectangle {
+    background-color: var(--red-main);
+}
+
+.case-management .circle-metric {
+    background-color: var(--red-main);
+}
+
+
+
+/* ---------------------------------------------------
+HIGHCHARTS STYLE
+----------------------------------------------------*/
+
+.highcharts-root {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    fill: var(--light-grey);    
+}
+
+.highcharts-graph {
+    stroke-width: 1px;
+}
+
+.highcharts-color-0 {
+    fill: var(--midnight-blue);
+    stroke: var(--midnight-blue);
+}
+
+.highcharts-color-1 {
+    fill: var(--aqua-main);
+    stroke: var(--aqua-main);
+}
+
+.highcharts-color-2 {
+    fill: var(--gold-main);
+    stroke: var(--gold-main);
+}
+
+.highcharts-color-3 {
+    fill: var(--red-main);
+    stroke: var(--red-main);
+}
+
+.highcharts-axis-title {
+    visibility: hidden;
+}
+
+.highcharts-axis-labels {
+    font-size: 10px;
+}
+
+.highcharts-background {
+    fill: transparent
+}
+
+.highcharts-yaxis {
+    visibility: hidden;
+}
+
+.highcharts-xaxis {
+    visibility: hidden;
+}
+
+.highcharts-contextbutton {
+    visibility: hidden;
+}
+
+.highcharts-credits {
+    visibility: hidden;
+}
+
+.highcharts-legend {
+    visibility: hidden
+}
+
+.highcharts-legend-item > text {
+    fill: var(--dark-grey);
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.highcharts-tooltip text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    fill:  var(--dark-grey);
+
+}
+
+.highcharts-tooltip-box {
+    stroke-width: 0px;
+}
+
+tr.aqua-catg-one .highcharts-color-0 {
+    fill: var(--green-main);
+    stroke: var(--green-main);
+}
+
+tr.aqua-catg-two .highcharts-color-0 {
+    fill: var(--cerulean-main);
+    stroke: var(--cerulean-main);
+}
+
+tr.aqua-catg-three .highcharts-color-0 {
+    fill: var(--purple-main);
+    stroke: var(--purple-main);
+}
+
+tr.aqua-catg-four .highcharts-color-0 {
+    fill: var(--green-3);
+    stroke: var(--green-3);
+}
+
+tr.aqua-catg-five .highcharts-color-0 {
+    fill: var(--cerulean-3);
+    stroke: var(--cerulean-3);
+}
+
+tr.aqua-catg-six .highcharts-color-0 {
+    fill: var(--purple-3);
+    stroke: var(--purple-3);
+}
+
+tr.catg-no .highcharts-color-0 {
+    fill: var(--medium-grey-1);
+    stroke: var(--medium-grey-1);
+}
+
+tr.gold-catg-one .highcharts-color-0 {
+    fill: var(--gold-secondary);
+    stroke: var(--gold-secondary);
+}
+
+tr.gold-catg-two .highcharts-color-0 {
+    fill: var(--gold-main);
+    stroke: var(--gold-main);
+}
+
+tr.gold-catg-three .highcharts-color-0 {
+    fill: var(--green-1);
+    stroke: var(--green-1);
+}
+
+tr.gold-catg-four .highcharts-color-0 {
+    fill: var(--green-main);
+    stroke: var(--green-main);
+}
+
+tr.gold-catg-five .highcharts-color-0 {
+    fill: var(--green-3);
+    stroke: var(--green-3);
+}
+
+tr.gold-catg-six .highcharts-color-0 {
+    fill: var(--cerulean-3);
+    stroke: var(--cerulean-3);
+}
+
+.aqua-family .highcharts-color-0 {
+    fill: var(--green-main);
+    stroke: var(--green-main);
+}
+
+.aqua-family .highcharts-color-1 {
+    fill: var(--cerulean-main);
+    stroke: var(--cerulean-main);
+}
+
+.aqua-family .highcharts-color-2 {
+    fill: var(--purple-main);
+    stroke: var(--purple-main);
+}
+
+.aqua-family .highcharts-color-3 {
+    fill: var(--green-3);
+    stroke: var(--green-3);
+}
+
+.aqua-family .highcharts-color-4 {
+    fill: var(--medium-grey-1);
+    stroke: var(--medium-grey-1);
+}
+
+.gold-family .highcharts-color-0 {
+    fill: var(--gold-secondary);
+    stroke: var(--gold-secondary);
+}
+
+.gold-family .highcharts-color-1 {
+    fill: var(--gold-main);
+    stroke: var(--gold-main);
+}
+
+.gold-family .highcharts-color-2 {
+    fill: var(--green-1);
+    stroke: var(--green-1);
+}
+
+.gold-family .highcharts-color-3 {
+    fill:  var(--green-main);
+    stroke:  var(--green-main);
+}
+
+.gold-family .highcharts-color-4 {
+    fill: var(--medium-grey-1);
+    stroke: var(--medium-grey-1);
+}
+
+
+/* ---------------------------------------------------
+FLOAT STYLES
+----------------------------------------------------*/
+.seventy {
+    width: 70%;
+    float: left;
+}
+
+.seventy table {
+    width: 100%;
+}
+
+.thirty {
+    width: 30%;
+    float: left;
+    background-color: var(--light-grey-2);   
+}
+
+
+
+
+
+
