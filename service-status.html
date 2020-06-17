@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>service status</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/overview.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://rawgit.com/highcharts/rounded-corners/master/rounded-corners.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class = "header-rectangle"></div>
+                <h1>Service Status</h1>
+                <h3>Sample Agency &ndash; Sample Site</h3>
+                <h3>Program Dates: 09/05/2018 - 06/15/2019</h3>
+            </header>
+            <div class = inner-content>  
+                <div class = "program-overview">
+                    <h2>Group Services</h2>
+                    <br>
+                    <div>
+                        <table id = "attendance-by-date">
+                            <thead>
+                                <tr>
+                                    <th style = "width: 150px">Service Name</th>
+                                    <th>Total Enrollment</th>
+                                    <th>Total Dropped</th>
+                                    <th>Total Service Days</th>
+                                    <th>Total Present Records</th>
+                                    <th>Total Service Records</th>
+                                    <th>ADA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>31</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>2</td>  
+                                    <td>7</td> 
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>31</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>2</td>  
+                                    <td>7</td> 
+
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>31</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>2</td>  
+                                    <td>7</td> 
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>31</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>2</td>  
+                                    <td>7</td> 
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>31</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>2</td>  
+                                    <td>7</td> 
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>31</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>2</td>  
+                                    <td>7</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2>Events</h2>
+                    <br>
+                    <div class = "total-table">
+                        <table id = "attendance-by-date">
+                            <thead>
+                                <tr>
+                                    <th style = "width: 150px">Service Name</th>
+                                    <th>Total Service Days</th>
+                                    <th>Event Attendance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>23</td>
+                                    <td>5</td>           
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>23</td>
+                                    <td>5</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>23</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>23</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>23</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>23</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2>Individual Services</h2>
+                    <br>
+                    <div class = "fixed">
+                        <table id = "attendance-by-date">
+                            <thead>
+                                <tr>
+                                    <th style = "width: 150px">Service Name</th>
+                                    <th>Total Participants</th>
+                                    <th>Total Staff</th>
+                                    <th>Total Service Days</th>
+                                    <th>Total Sessions</th>
+                                    <th>Average Daily Sessions</th>
+                                    <th>Average Daily Minutes</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>29</td>
+                                    <td>5</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td>17.00</td>          
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>29</td>
+                                    <td>5</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td>17.00</td> 
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>29</td>
+                                    <td>5</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>29</td>
+                                    <td>5</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>29</td>
+                                    <td>5</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td>17.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sample Service One</td>
+                                    <td>29</td>
+                                    <td>5</td>
+                                    <td>27</td>
+                                    <td>17</td>
+                                    <td>1</td>
+                                    <td>17.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class = "footnote">
+                        <p><span class = "bold">Total Enrollment-</span> Number of participants that were scheduled to attend the service at some point in the report period. </p>
+                        <p><span class = "bold">Total Dropped-</span> Number of participants that were dropped and not reenrolled during the report period. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src = "js/sparkline.js"></script>
