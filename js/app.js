@@ -16,7 +16,7 @@ Highcharts.chart('attd-by-date-program-overview', {
         layout: 'horizontal',
         align: 'center',
         verticalAlign: 'top',
-        symbolWidth: 15,
+        symbolWidth: 20,
         symbolPadding: 20
     },
 

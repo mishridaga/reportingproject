@@ -60,15 +60,15 @@ h2 {
 h4 {
     font-size: 15px;
     font-weight: 700;
-    padding: 30px 0px 15px; 
+    padding: 15px 0px 15px; 
     margin: 0px;
     clear: both;
 }
 
 .footnote{
     background-color: var(--light-grey-2);
-    padding: 15px 20px;
-    margin: 20px 0px 0px;
+    padding: 5px 15px;
+    margin: 10px 0px 0px;
 }
 
 hr {
@@ -80,15 +80,15 @@ hr {
 }
 
 .chart {
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
     margin: 0px 0px -10px;
     height: 190px;
 }
 
 .chart-legend {
-    padding: 20px 0px 0px 0px;
-    margin: 0px 0px -10px;
-    height: 220px;
+    padding: 0px 0px 10px 0px;
+    margin: -10px 0px -10px;
+    height: 230px;
 }
 
 
@@ -101,6 +101,9 @@ FILTERS STYLES
     background: var(--light-grey-2);
     margin-top: 30px;
     display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+    padding-top: 0px;
 }
 
 .filters h4 {
@@ -108,15 +111,27 @@ FILTERS STYLES
     padding: 10px;
     margin-left: 33px;
     margin-top: 1px;
+    float: left;
+    
+}
+
+.filters-p {
+    float: left;
+    display: inline-block;
+    width: 85%;
+    margin-top: 13px;
+
+        
 }
 
 .filters p {
+    font-size: 10px;
     background-color: white;
     border: 1px var(--dark-grey) solid;
     border-radius: 25px;
     float: left;
-    padding: 1px 10px;
-    margin: 2px 10px 10px;
+    padding: 1px 10px 1px;
+    margin: 0px 20px 10px 0px
 
 }
 
@@ -183,7 +198,7 @@ th {
 }
 
 td {
-    padding: 5px 5px;
+    padding: 5px 10px;
 }
 
 
@@ -266,7 +281,7 @@ HIGH LEVEL METRIC STYLES
     table-layout: fixed;
     text-align: center;
     width: 100%;
-    padding: 10px 0px 20px;
+    padding: 10px 0px 10px;
 
 }
 
@@ -274,6 +289,7 @@ HIGH LEVEL METRIC STYLES
     font-size: 13px;
     color: var(--dark-grey);
     text-transform: none;   
+    padding: 0px 10px 0px;
 }
 
 .overview th:first-child , .overview td:first-child{
@@ -308,6 +324,7 @@ HIGH LEVEL METRIC STYLES
     width: 60%;
     margin: auto;
 }
+
 
 
 
