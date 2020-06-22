@@ -100,10 +100,10 @@ FILTERS STYLES
 .filters {
     width: 100%;
     background: var(--light-grey-2);
-    margin-top: 30px;
+    margin-top: 20px;
     display: inline-block;
     float: left;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding-top: 0px;
 }
 
@@ -119,7 +119,7 @@ FILTERS STYLES
 .filters-p {
     float: left;
     display: inline-block;
-    width: 85%;
+    width: 87%;
     margin-top: 13px;
     margin-bottom: 3px;
 
