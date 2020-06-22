@@ -21,7 +21,8 @@ Highcharts.chart('by_gender', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false,
-            }
+            },
+            innerSize: '50%'
         }
     },
     series: [{
@@ -62,7 +63,8 @@ Highcharts.chart('by_ethnicity', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false,
-            }
+            },
+            innerSize: '50%'
         }
     },
     series: [{
@@ -112,7 +114,8 @@ Highcharts.chart('by_age', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false,
-            }
+            },
+            innerSize: '50%'
         }
     },
     series: [{
@@ -171,7 +174,8 @@ Highcharts.chart('by_grade', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false,
-            }
+            },
+            innerSize: '50%'
         }
     },
     series: [{
@@ -221,7 +225,8 @@ Highcharts.chart('by_lep', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false,
-            }
+            },
+            innerSize: '50%'
         }
     },
     series: [{
@@ -265,7 +270,8 @@ Highcharts.chart('by_frls', {
             cursor: 'pointer',
             dataLabels: {
                 enabled: false,
-            }
+            },
+            innerSize: '50%'
         }
     },
     series: [{
@@ -282,6 +288,54 @@ Highcharts.chart('by_frls', {
         }, {
             name: 'Missing',
             y: 60
+        }]
+    }]
+});
+
+Highcharts.chart('by_zip', {
+    chart: {
+        type: 'pie',
+        styledMode: true,
+        height: '145px'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false,
+            },
+            innerSize: '50%'
+        }
+    },
+    series: [{
+        colorByPoint: true,
+        data: [{
+            name: '97035',
+            y: 10,
+        }, {
+            name: '94704',
+            y: 15
+        }, {
+            name: '94210',
+            y: 40
+        }, {
+            name: '97035',
+            y: 35
+        },  {
+            name: '98035',
+            y: 15
         }]
     }]
 });

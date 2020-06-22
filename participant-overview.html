@@ -14,8 +14,8 @@
         <script src="https://code.highcharts.com/modules/accessibility.js"></script>
         <script src="https://rawgit.com/highcharts/rounded-corners/master/rounded-corners.js"></script>
     </head>
-    <body id = "executive-overview">
-        <div class="container">
+    <body id = "participants-overview">
+        <div class="container participants-overview">
             <div class = "page">
                 <header>
                     <div class = "header-rectangle"></div>
@@ -91,6 +91,10 @@
                         <col width="25%">
                         <td style = "padding:0px">
                             <table class="total-table"> 
+                                <col width="150px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="150px">
                                 <thead>
                                     <tr>
                                         <th>Gender</th>
@@ -99,20 +103,26 @@
                                     </tr>
                                 </thead>
                                 <tbody id="tbody-sparkline">
-                                    <tr>
-                                        <td>Female</td>
+                                    <tr class = "color-0">
+                                        <td> 
+                                            <div class = "circle"></div>
+                                            Female</td>
                                         <td>79</td>
                                         <td class = "no-border medium" data-sparkline="79;79"></td>
                                         <td>38%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Male</td>
+                                    <tr class = "color-1">
+                                        <td>
+                                            <div class = "circle"></div>
+                                            Male</td>
                                         <td>20</td>
                                         <td class = "no-border medium" data-sparkline="20;79"></td>
                                         <td>20%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Missing</td>
+                                    <tr class = "color-2">
+                                        <td>
+                                            <div class = "circle"></div>
+                                            Missing</td>
                                         <td>1</td>
                                         <td class = "no-border medium" data-sparkline="1;79"></td>
                                         <td>1%</td>
@@ -134,7 +144,11 @@
                         <col width="75%">
                         <col width="25%">
                         <td style = "padding:0px">
-                            <table class="total-table title-table"> 
+                            <table class="total-table"> 
+                                <col width="300px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="100px">
                                 <thead>
                                     <tr>
                                         <th>Ethnicity</th>
@@ -143,38 +157,39 @@
                                     </tr>
                                 </thead>
                                 <tbody id="tbody-sparkline">
-                                    <tr>
-                                        <td>American Indian/Alaskan Native</td>
+                                    <tr class = "color-0">
+                                        <td>
+                                            <div class = "circle"></div>American Indian/Alaskan Native</td>
                                         <td>12</td>
                                         <td class = "no-border medium" data-sparkline="12;28"></td>
                                         <td>12%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Hispanic/Latino</td>
+                                    <tr class = "color-1">
+                                        <td><div class = "circle"></div>Hispanic/Latino</td>
                                         <td>28</td>
                                         <td class = "no-border medium" data-sparkline="28;28"></td>
                                         <td>28%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Black/African American</td>
+                                    <tr class = "color-2">
+                                        <td><div class = "circle"></div>Black/African American</td>
                                         <td>15</td>
                                         <td class = "no-border medium" data-sparkline="15;28"></td>
                                         <td>15%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Asian</td>
+                                    <tr class = "color-3">
+                                        <td><div class = "circle"></div>Asian</td>
                                         <td>15</td>
                                         <td class = "no-border medium" data-sparkline="15;28"></td>
                                         <td>15%</td>
                                     </tr>
-                                    <tr>
-                                        <td>White</td>
+                                    <tr class = "color-4">
+                                        <td><div class = "circle"></div>White</td>
                                         <td>10</td>
                                         <td class = "no-border medium" data-sparkline="10;28"></td>
                                         <td>10%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Missing</td>
+                                    <tr class = "color-5">
+                                        <td><div class = "circle"></div>Missing</td>
                                         <td>15</td>
                                         <td class = "no-border medium" data-sparkline="15;28"></td>
                                         <td>15</td>
@@ -197,6 +212,10 @@
                         <col width="25%">
                         <td style = "padding:0px">
                             <table class="total-table"> 
+                                <col width="150px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="150px">
                                 <thead>
                                     <tr>
                                         <th>Age</th>
@@ -205,56 +224,56 @@
                                     </tr>
                                 </thead>
                                 <tbody id="tbody-sparkline">
-                                    <tr>
-                                        <td>5</td>
+                                    <tr class = "color-0">
+                                        <td><div class = "circle"></div>5</td>
                                         <td>12</td>
                                         <td class = "no-border medium" data-sparkline="12;20"></td>
                                         <td>12%</td>
                                     </tr>
-                                    <tr>
-                                        <td>6</td>
+                                    <tr class = "color-1">
+                                        <td><div class = "circle"></div>6</td>
                                         <td>8</td>
                                         <td class = "no-border medium" data-sparkline="8;20"></td>
                                         <td>8%</td>
                                     </tr>
-                                    <tr>
-                                        <td>7</td>
+                                    <tr class = "color-2">
+                                        <td><div class = "circle"></div>7</td>
                                         <td>5</td>
                                         <td class = "no-border medium" data-sparkline="5;20"></td>
                                         <td>5%</td>
                                     </tr>
-                                    <tr>
-                                        <td>8</td>
+                                    <tr class = "color-3">
+                                        <td><div class = "circle"></div>8</td>
                                         <td>15</td>
                                         <td class = "no-border medium" data-sparkline="15;20"></td>
                                         <td>15%</td>
                                     </tr>
-                                    <tr>
-                                        <td>9</td>
+                                    <tr class = "color-4">
+                                        <td><div class = "circle"></div>9</td>
                                         <td>12</td>
                                         <td class = "no-border medium" data-sparkline="12;20"></td>
                                         <td>12%</td>
                                     </tr>
-                                    <tr>
-                                        <td>10</td>
+                                    <tr class = "color-5">
+                                        <td><div class = "circle"></div>10</td>
                                         <td>8</td>
                                         <td class = "no-border medium" data-sparkline="8;20"></td>
                                         <td>8%</td>
                                     </tr>
-                                    <tr>
-                                        <td>11</td>
+                                    <tr class = "color-6">
+                                        <td><div class = "circle"></div>11</td>
                                         <td>11</td>
                                         <td class = "no-border medium" data-sparkline="11;20"></td>
                                         <td>11%</td>
                                     </tr>
-                                    <tr>
-                                        <td>12</td>
+                                    <tr class = "color-7">
+                                        <td><div class = "circle"></div>12</td>
                                         <td>9</td>
                                         <td class = "no-border medium" data-sparkline="9;20"></td>
                                         <td>9%</td>
                                     </tr>
-                                    <tr>
-                                        <td>13</td>
+                                    <tr class = "color-8">
+                                        <td><div class = "circle"></div>13</td>
                                         <td>20</td>
                                         <td class = "no-border medium" data-sparkline="20;20"></td>
                                         <td>20%</td>
@@ -277,6 +296,10 @@
                         <col width="25%">
                         <td style = "padding:0px">
                             <table class="total-table"> 
+                                <col width="150px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="150px">
                                 <thead>
                                     <tr>
                                         <th>Grade</th>
@@ -285,38 +308,38 @@
                                     </tr>
                                 </thead>
                                 <tbody id="tbody-sparkline">
-                                    <tr>
-                                        <td>5</td>
+                                    <tr class = "color-0">
+                                        <td><div class = "circle"></div>5</td>
                                         <td>18</td>
                                         <td class = "no-border medium" data-sparkline="18;20"></td>
                                         <td>18%</td>
                                     </tr>
-                                    <tr>
-                                        <td>6</td>
+                                    <tr class = "color-1">
+                                        <td><div class = "circle"></div>6</td>
                                         <td>12</td>
                                         <td class = "no-border medium" data-sparkline="12;20"></td>
                                         <td>12%</td>
                                     </tr>
-                                    <tr>
-                                        <td>7</td>
+                                    <tr class = "color-2">
+                                        <td><div class = "circle"></div>7</td>
                                         <td>11</td>
                                         <td class = "no-border medium" data-sparkline="11;20"></td>
                                         <td>11%</td>
                                     </tr>
-                                    <tr>
-                                        <td>8</td>
+                                    <tr class = "color-3">
+                                        <td><div class = "circle"></div>8</td>
                                         <td>19</td>
                                         <td class = "no-border medium" data-sparkline="19;20"></td>
                                         <td>19%</td>
                                     </tr>
-                                    <tr>
-                                        <td>9</td>
+                                    <tr class = "color-4">
+                                        <td><div class = "circle"></div>9</td>
                                         <td>20</td>
                                         <td class = "no-border medium" data-sparkline="20;20"></td>
                                         <td>20%</td>
                                     </tr>
-                                    <tr>
-                                        <td>10</td>
+                                    <tr class = "color-5">
+                                        <td><div class = "circle"></div>10</td>
                                         <td>20</td>
                                         <td class = "no-border medium" data-sparkline="20;20"></td>
                                         <td>20%</td>
@@ -339,6 +362,10 @@
                         <col width="25%">
                         <td style = "padding:0px">
                             <table class="total-table"> 
+                                <col width="150px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="150px">
                                 <thead>
                                     <tr>
                                         <th>Value</th>
@@ -347,26 +374,26 @@
                                     </tr>
                                 </thead>
                                 <tbody id="tbody-sparkline">
-                                    <tr>
-                                        <td>Yes</td>
+                                    <tr class = "color-0">
+                                        <td><div class = "circle"></div>Yes</td>
                                         <td>10</td>
                                         <td class = "no-border medium" data-sparkline="10;60"></td>
                                         <td>10%</td>
                                     </tr>
-                                    <tr>
-                                        <td>No</td>
+                                    <tr class = "color-1">
+                                        <td><div class = "circle"></div>No</td>
                                         <td>18</td>
                                         <td class = "no-border medium" data-sparkline="18;60"></td>
                                         <td>18%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Unspecified</td>
+                                    <tr class = "color-2">
+                                        <td><div class = "circle"></div>Unspecified</td>
                                         <td>12</td>
                                         <td class = "no-border medium" data-sparkline="12;60"></td>
                                         <td>12%</td>
                                     </tr>
-                                    <tr>
-                                        <td>Missing</td>
+                                    <tr class = "color-3">
+                                        <td><div class = "circle"></div>Missing</td>
                                         <td>60</td>
                                         <td class = "no-border medium" data-sparkline="60;60"></td>
                                         <td>60%</td>
@@ -384,97 +411,119 @@
                         </td>
                     </table>
                     <h4>Participants By Free/Reduced Lunch Status</h4>
-                                       <table class = "table-pie">
+                    <table class = "table-pie">
                         <col width="75%">
                         <col width="25%">
                         <td style = "padding:0px">
                             <table class="total-table"> 
-                            <thead>
-                                <tr>
-                                    <th>Value</th>
-                                    <th colspan="2">Count</th>
-                                    <th>Percent</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody-sparkline">
-                                <tr>
-                                    <td>Yes</td>
-                                    <td>10</td>
-                                    <td class = "no-border medium" data-sparkline="10;60"></td>
-                                    <td>10%</td>
-                                </tr>
-                                <tr>
-                                    <td>No</td>
-                                    <td>18</td>
-                                    <td class = "no-border medium" data-sparkline="18;60"></td>
-                                    <td>18%</td>
-                                </tr>
-                                <tr>
-                                    <td>Unspecified</td>
-                                    <td>12</td>
-                                    <td class = "no-border medium" data-sparkline="12;60"></td>
-                                    <td>12%</td>
-                                </tr>
-                                <tr>
-                                    <td>Missing</td>
-                                    <td>60</td>
-                                    <td class = "no-border medium" data-sparkline="60;60"></td>
-                                    <td>60%</td>
-                                </tr>
-                                <tr>
-                                    <td>Total</td>
-                                    <td colspan = "2">100</td>
-                                    <td>100%</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <col width="150px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="150px">
+                                <thead>
+                                    <tr>
+                                        <th>Value</th>
+                                        <th colspan="2">Count</th>
+                                        <th>Percent</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-sparkline">
+                                    <tr class = "color-0">
+                                        <td><div class = "circle"></div>Yes</td>
+                                        <td>10</td>
+                                        <td class = "no-border medium" data-sparkline="10;60"></td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr class = "color-1">
+                                        <td><div class = "circle"></div>No</td>
+                                        <td>18</td>
+                                        <td class = "no-border medium" data-sparkline="18;60"></td>
+                                        <td>18%</td>
+                                    </tr>
+                                    <tr class = "color-2">
+                                        <td><div class = "circle"></div>Unspecified</td>
+                                        <td>12</td>
+                                        <td class = "no-border medium" data-sparkline="12;60"></td>
+                                        <td>12%</td>
+                                    </tr>
+                                    <tr class = "color-3">
+                                        <td><div class = "circle"></div>Missing</td>
+                                        <td>60</td>
+                                        <td class = "no-border medium" data-sparkline="60;60"></td>
+                                        <td>60%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td colspan = "2">100</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </td>
                         <td style = "padding:0px;background:#F0F0F0">
                             <div id = "by_frls"></div>
                         </td>
                     </table>
                     <h4>Participants By ZipCode</h4>
-                    <table class="total-table"> 
-                        <thead>
-                            <tr>
-                                <th>Zip Code</th>
-                                <th colspan="2">Count</th>
-                                <th>Percent</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tbody-sparkline">
-                            <tr>
-                                <td>97035</td>
-                                <td>10</td>
-                                <td class = "no-border large" data-sparkline="10;40"></td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <td>94704</td>
-                                <td>15</td>
-                                <td class = "no-border large" data-sparkline="15;40"></td>
-                                <td>15%</td>
-                            </tr>
-                            <tr>
-                                <td>94210</td>
-                                <td>40</td>
-                                <td class = "no-border large" data-sparkline="40;40"></td>
-                                <td>40%</td>
-                            </tr>
-                            <tr>
-                                <td>97035</td>
-                                <td>35</td>
-                                <td class = "no-border large" data-sparkline="35;40"></td>
-                                <td>35%</td>
-                            </tr>
-                            <tr>
-                                <td>Total</td>
-                                <td colspan = "2">100</td>
-                                <td>100%</td>
-                            </tr>
-                        </tbody>
+                    <table class = "table-pie">
+                        <col width="75%">
+                        <col width="25%">
+                        <td style = "padding:0px">
+                            <table class="total-table"> 
+                                <col width="150px">
+                                <col width="20px">
+                                <col width="200px">
+                                <col width="150px">
+                                <thead>
+                                    <tr>
+                                        <th>Zip Code</th>
+                                        <th colspan="2">Count</th>
+                                        <th>Percent</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-sparkline">
+                                    <tr class = "color-0">
+                                        <td><div class = "circle"></div>97035</td>
+                                        <td>10</td>
+                                        <td class = "no-border medium" data-sparkline="10;40"></td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr class = "color-1">
+                                        <td><div class = "circle"></div>94704</td>
+                                        <td>15</td>
+                                        <td class = "no-border medium" data-sparkline="15;40"></td>
+                                        <td>15%</td>
+                                    </tr>
+                                    <tr class = "color-2">
+                                        <td><div class = "circle"></div>94210</td>
+                                        <td>40</td>
+                                        <td class = "no-border medium" data-sparkline="40;40"></td>
+                                        <td>40%</td>
+                                    </tr>
+                                    <tr class = "color-3">
+                                        <td><div class = "circle"></div>97035</td>
+                                        <td>35</td>
+                                        <td class = "no-border medium" data-sparkline="35;40"></td>
+                                        <td>35%</td>
+                                    </tr>
+                                    <tr class = "color-4">
+                                        <td><div class = "circle"></div>98035</td>
+                                        <td>15</td>
+                                        <td class = "no-border medium" data-sparkline="15;40"></td>
+                                        <td>15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td colspan = "2">100</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style = "padding:0px;background:#F0F0F0">
+                            <div id = "by_zip"></div>
+                        </td>
                     </table>
-
                 </div>
             </div> 
         </div>

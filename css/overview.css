@@ -6,28 +6,43 @@ COLOR GUIDE
 :root {
     --report-blue: #2C537D;
     --midnight-blue: #19325B;
+    
+    
     --dark-grey: #444444;
     --medium-grey-1: #878787;
     --medium-grey-2: #BBBBBB;
     --light-grey-1: #DFDFDF;
     --light-grey-2: #F0F0F0;
+    
+    
+    --aqua-1: #B2D1D3;
     --aqua-main: #38A1A2;
-    --aqua-secondary: #1E6864;
+    --aqua-3: #1E6864;
+    
+    --gold-1: #FDD90D;
     --gold-main: #FBAC18;
-    --gold-secondary: #F58646;
+    --gold-3: #F0851E;
+    
+    
+    --red-1:  #FCC097;
     --red-main: #DC4227;
-    --red-secondary: #8F221D;
-    
-    
-    --green-main: #64B946;
-    --cerulean-main:  #0495CB;
-    --purple-main: #803D7B;
-    --green-3: #427939;
-    --cerulean-3:  #025281;
-    --purple-3: #5B1F5B;
+    --red-3: #8F221D;
     
     --green-1: #C5DA42;
+    --green-main: #64B946;
+    --green-3: #427939;
     
+    --cerulean-1: #68D5EA;
+    --cerulean-main:  #0495CB;
+    --cerulean-3:  #025281;
+    
+    
+    --purple-1: #D09EC8;
+    --purple-main: #803D7B;
+    --purple-3: #5B1F5B;
+    
+    
+    --berry-1: #EC4678;
     --berry-main: #B41343 ;
     --berry-3: #931037;   
 }
@@ -188,7 +203,7 @@ GROUP SERVICES STYLES
 }
 
 .group-services .section-header .rectangle {
-    background-color: var(--aqua-secondary);
+    background-color: var(--aqua-3);
 }
 
 .group-services .section-header .rounded-rectangle {
@@ -209,7 +224,7 @@ INDIVIDUAL SERVICES STYLES
 }
 
 .individual-services .section-header .rectangle {
-    background-color: var(--gold-secondary)
+    background-color: var(--gold-3)
 }
 
 .individual-services .section-header .rounded-rectangle {
@@ -230,7 +245,7 @@ CASE MANAGEMENT STYLE
 }
 
 .case-management .section-header .rectangle {
-    background-color: var(--red-secondary);
+    background-color: var(--red-3);
 }
 
 .case-management .section-header .rounded-rectangle {
@@ -442,6 +457,220 @@ tr.gold-catg-six .highcharts-color-0 {
     fill: var(--medium-grey-1);
     stroke: var(--medium-grey-1);
 }
+
+
+.participants-overview .highcharts-color-0 {
+    fill: var(--green-main);
+    stroke: var(--green-main);
+}
+
+.participants-overview .highcharts-color-1 {
+    fill: var(--cerulean-main);
+    stroke: var(--cerulean-main);
+}
+
+.participants-overview .highcharts-color-2 {
+    fill: var(--gold-main);
+    stroke: var(--gold-main);
+}
+
+.participants-overview .highcharts-color-3 {
+    fill: var(--aqua-main);
+    stroke: var(--aqua-main);
+}
+
+.participants-overview .highcharts-color-4 {
+    fill: var(--red-main);
+    stroke: var(--red-main);
+}
+
+.participants-overview .highcharts-color-5 {
+    fill: var(--purple-main);
+    stroke: var(--purple-main);
+}
+
+.participants-overview .highcharts-color-6 {
+    fill: var(--berry-main);
+    stroke: var(--berry-main);
+}
+
+.participants-overview .highcharts-color-7 {
+    fill: var(--green-3);
+    stroke: var(--green-3);
+}
+
+.participants-overview .highcharts-color-8 {
+    fill: var(--cerulean-3);
+    stroke: var(--cerulean-3);
+}
+
+.participants-overview .highcharts-color-9 {
+    fill: var(--gold-3);
+    stroke: var(--gold-3);
+}
+
+.participants-overview .highcharts-color-10 {
+    fill: var(--gold-3);
+    stroke: var(--gold-3);
+}
+
+.participants-overview .highcharts-color-11 {
+    fill: var(--aqua-3);
+    stroke: var(--aqua-3);
+}
+
+.participants-overview .highcharts-color-12 {
+    fill: var(--purple-3);
+    stroke: var(--purple-3);
+}
+
+.participants-overview .highcharts-color-13 {
+    fill: var(--green-1);
+    stroke: var(--green-1);
+}
+
+.participants-overview .highcharts-color-14 {
+    fill: var(--cerulean-1);
+    stroke: var(--cerulean-1);
+}
+
+.participants-overview .highcharts-color-16 {
+    fill: var(--gold-1);
+    stroke: var(--gold-1);
+}
+
+.participants-overview .highcharts-color-17 {
+    fill: var(--aqua-1);
+    stroke: var(--aqua-1);
+}
+
+.participants-overview .highcharts-color-18 {
+    fill: var(--red-1);
+    stroke: var(--red-1);
+}
+
+.participants-overview .highcharts-color-18 {
+    fill: var(--purple-1);
+    stroke: var(--purple-1);
+}
+
+
+.participants-overview .color-0 .highcharts-color-0, .participants-overview .color-0 .circle  {
+    fill: var(--green-main);
+    stroke: var(--green-main);
+    background-color: var(--green-main);
+}
+
+.participants-overview .color-1 .highcharts-color-0, .participants-overview .color-1 .circle  {
+    fill: var(--cerulean-main);
+    stroke: var(--cerulean-main);
+    background-color: var(--cerulean-main);
+}
+
+.participants-overview .color-2 .highcharts-color-0, .participants-overview .color-2 .circle  {
+    fill: var(--gold-main);
+    stroke: var(--gold-main);
+    background-color: var(--gold-main);
+}
+
+.participants-overview .color-3 .highcharts-color-0, .participants-overview .color-3 .circle  {
+    fill: var(--aqua-main);
+    stroke: var(--aqua-main);
+    background-color: var(--aqua-main);
+}
+
+.participants-overview .color-4 .highcharts-color-0, .participants-overview .color-4 .circle {
+    fill: var(--red-main);
+    stroke: var(--red-main);
+    background-color: var(--red-main);
+}
+
+.participants-overview .color-5 .highcharts-color-0 , .participants-overview .color-5 .circle {
+    fill: var(--purple-main);
+    stroke: var(--purple-main);
+    background-color: var(--purple-main);
+}
+
+.participants-overview .color-6 .highcharts-color-0, .participants-overview .color-6 .circle  {
+    fill: var(--berry-main);
+    stroke: var(--berry-main);
+    background-color: var(--berry-main);
+}
+
+.participants-overview .color-7 .highcharts-color-0, .participants-overview .color-7 .circle  {
+    fill: var(--green-3);
+    stroke: var(--green-3);
+    background-color: var(--green-3);
+}
+
+.participants-overview .color-8 .highcharts-color-0, .participants-overview .color-8 .circle  {
+    fill: var(--cerulean-3);
+    stroke: var(--cerulean-3);
+    background-color: var(--cerulean-3)
+}
+
+.participants-overview .color-9 .highcharts-color-0, .participants-overview .color-9 .circle  {
+    fill: var(--gold-3);
+    stroke: var(--gold-3);
+    background-color: var(--gold-3)
+}
+
+.participants-overview .color-10 .highcharts-color-0, .participants-overview .color-10 .circle  {
+    fill: var(--gold-3);
+    stroke: var(--gold-3);
+    background-color: var(--gold-3);
+}
+
+.participants-overview .color-11 .highcharts-color-0, .participants-overview .color-11 .circle  {
+    fill: var(--aqua-3);
+    stroke: var(--aqua-3);
+    background-color: var(--aqua-3);
+    
+}
+
+.participants-overview .color-12 .highcharts-color-0, .participants-overview .color-12 .circle  {
+    fill: var(--purple-3);
+    stroke: var(--purple-3);
+    background-color: var(--purple-3);
+}
+
+.participants-overview .color-13 .highcharts-color-0 , .participants-overview .color-13.circle {
+    fill: var(--green-1);
+    stroke: var(--green-1);
+    background-color: var(--green-1);
+}
+
+.participants-overview .color-14 .highcharts-color-0, .participants-overview .color-14 .circle  {
+    fill: var(--cerulean-1);
+    stroke: var(--cerulean-1);
+    background-color: var(--cerulean-1);
+}
+
+.participants-overview .color-15 .highcharts-color-0, .participants-overview .color-15 .circle  {
+    fill: var(--gold-1);
+    stroke: var(--gold-1);
+    background-color: var(--green-1);
+}
+
+.participants-overview .color-16 .highcharts-color-0 , .participants-overview .color-16.circle {
+    fill: var(--aqua-1);
+    stroke: var(--aqua-1);
+    background-color: var(--aqua-1);
+}
+
+.participants-overview .color-17 .highcharts-color-0 , .participants-overview .color-17 .circle {
+    fill: var(--red-1);
+    stroke: var(--red-1);
+    background-color: var(--red-1);
+    
+}
+
+.participants-overview .color-18 .highcharts-color-0 , .participants-overview .color-18 .circle {
+    fill: var(--purple-1);
+    stroke: var(--purple-1);
+    background-color: var(--purple-1);
+}
+
 
 
 /* ---------------------------------------------------
